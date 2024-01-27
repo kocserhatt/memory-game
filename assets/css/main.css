@@ -1,55 +1,80 @@
-.head{
-    width: 1440px;
-    height: 1024px;
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-.navbar{
-    border: 1px solid grey;
-    h1{
-        color: #152938;
-        font-family: "Atkinson Hyperlegible";
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    button{
-        width: 127px;
-        height: 30px;
-        flex-shrink: 0;
-        border-radius: 26px;
-        background: #FDA214;
-        color: #FCFCFC;
-        text-align: center;
-        font-family: "Atkinson Hyperlegible";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+* {
+    margin: 0;
 }
-h1{
-    color: #152938;
-font-family: "Atkinson Hyperlegible";
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 700;
 }
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
 }
-.container{
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    color: #FCFCFC;
+    font-size: 20px;
+    padding: 13px 28px;
+    border-radius: 26px;
+    background: #FDA214;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
     display: flex;
-    border: 1px solid grey;
-    background: #FCFCFC;
-    flex-direction: column;
-    align-content: center;
-
-    
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
 }
-.btn{
-    width: 118px;
-    height: 118px;
-    flex-shrink: 0;
-    border-radius: 59px;
-    background-image: url(../img/Group\ Copy\ 3.png);
-    
+
+.gameBox {
+    width: 305px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    li {
+        display: inline-block;
+        color: #304859;
+        color: transparent;
+        font-size: 20px;
+        padding: 14px 24px;
+        border-radius: 50%;
+        background: #304859;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .active {
+        background-color: #BCCED9;
+        color: #FCFCFC;
+    }
+
+    .correct {
+        background-color: #FDA214;
+        color: #FCFCFC;
+    }
 }

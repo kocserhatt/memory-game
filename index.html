@@ -3,41 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hafıza oyunu</title>
+    <title>Memory Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
-    <header class="head">
-    <nav class="navbar">
-        <h1 class="name">Serhat koç</h1>
-        <button>reset</button>
-    </nav>
-        <div class="container">
-            <div class="bir">
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            <button class="btn"></button>
-            </div>
-            <div class="iki">
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            </div>
-            <div class="uc">
-            <button class="btn">9</button>
-            <button class="btn">10</button>
-            <button class="btn">11</button>
-            <button class="btn">12</button>
-            </div>
-            <div class="dort">
-            <button class="btn">13</button>
-            <button class="btn">14</button>
-            <button class="btn">15</button>
-            <button class="btn">16</button>
-            </div>
-        </div>
-    </header>
+    <div class="container">
+        
+        <header class="header">
+            <h1>memory</h1>
+            <a href="#" class="btn">New Game</a>
+        </header>
+        <ul class="gameBox"></ul>
+
+    </div>
 </body>
 </html>
