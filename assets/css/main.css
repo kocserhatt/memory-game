@@ -1,0 +1,55 @@
+.head{
+    width: 1440px;
+    height: 1024px;
+}
+
+.navbar{
+    border: 1px solid grey;
+    h1{
+        color: #152938;
+        font-family: "Atkinson Hyperlegible";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    button{
+        width: 127px;
+        height: 30px;
+        flex-shrink: 0;
+        border-radius: 26px;
+        background: #FDA214;
+        color: #FCFCFC;
+        text-align: center;
+        font-family: "Atkinson Hyperlegible";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+}
+h1{
+    color: #152938;
+font-family: "Atkinson Hyperlegible";
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+}
+.container{
+    display: flex;
+    border: 1px solid grey;
+    background: #FCFCFC;
+    flex-direction: column;
+    align-content: center;
+
+    
+}
+.btn{
+    width: 118px;
+    height: 118px;
+    flex-shrink: 0;
+    border-radius: 59px;
+    background-image: url(../img/Group\ Copy\ 3.png);
+    
+}
