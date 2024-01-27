@@ -58,9 +58,3 @@ function init() {
 }
 
 init();
-
-// function sayHello() {
-//     alert('merhaabaaa');
-// }
-
-// setTimeout(sayHello, 1500);
