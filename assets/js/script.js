@@ -36,10 +36,14 @@ function handleGameBtn() {
         setTimeout(function() {
             activeBtns[0].classList.remove('active');
             activeBtns[1].classList.remove('active');
-        }, timeoutDuration);
+            if(document.querySelectorAll("li").length === document.querySelectorAll(".correct").length){
+                
+                alert("bitti")
+            }
+        }, 
+        timeoutDuration);
+        }
     }
-}
-
 function renderGameScreen() {
     for(const item of items) {
         gameBox.innerHTML += `<li>${item}</li>`;
@@ -51,6 +55,7 @@ function renderGameScreen() {
         btn.addEventListener('click', handleGameBtn);
     }
 }
+
 
 function init() {
     createGameArray();
